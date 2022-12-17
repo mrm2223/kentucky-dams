@@ -1,182 +1,133 @@
 <!DOCTYPE html>
 <html>
-
+<!-- This is a comment in HTML -->
 
 <head>
-  <meta charset=utf-8 />
-  <title>Kentucky Dams</title>
+	<meta charset=utf-8 />
+	<!-- Below is the title of the document -->
+	<title>Kentucky Dams</title>
+	<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 
-  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet" />
-  <link href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-  <style>
-    /* The map element */
-    #map {
-      width: 100%;
-     margin: 0px auto; 
-    }
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 
-    /* Add HTML element styles */
+	<style>
+		/* This is a comment in CSS. Below are the document styles. */
+		/* Hexadecimal values for UKy Colors: 
+            #c7c9c8 light gray 
+            #63666a dark gray
+            #15397f dark blue
+            #009bda light blue
+            #0033a0 official blue
+        */
+		body {
+			margin: 0;
+			padding: 0;
+			background: #ffffff;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 400;
+			color: #3d3d3d;
+		}
 
-    body {
-      width: 80%;
-      margin: 10px auto;
-      padding: 0;
-      background: #FFFFFF;
-      font-family: 'PT Sans', Sans-serif;
-      font-weight: 300;
-      color: "black";
-      font-size: 100%;
-    }
+		section {
+			width: 960px;
+			/* width: 80%; */
+			margin: 20px auto;
+		}
 
-    /* Change opacity on hover over the icon class */
+		h1 {
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 300;
+			/* The em unit. 2.5x the current size */
+			font-size: 2.5em;
+			letter-spacing: .04em;
+			text-transform: uppercase;
+		}
 
-    .icon:hover {
-      opacity: .8;
-    }
+		h2 {
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 700;
+			color: gray;
+			font-size: 1.1em;
+			letter-spacing: .04em;
+		}
 
-    /* Modify Leaflet's default popup style */
+		p {
+			font-size: 1em;
+			line-height: 1.5em;
+		}
 
-    .leaflet-popup-content h3 {
-      font-family: "PT Sans", serif;
-      font-size: 1.3em;
-      margin-bottom: 6px;
-    }
+		a {
+			color: #005daa;
+			text-decoration: none;
+		}
 
-    .leaflet-popup-content p {
-      margin: 3px 0 6px;
-      font-size: 1.1em;
-    }
+		a:hover {
+			text-decoration: underline;
+		}
 
-    .leaflet-popup-content a {
-      font-weight: normal;
-    }
+		ul {
+			padding-left: 20px;
+		}
 
-    img.ladybeetle {
-      height: 25%;
-      width: 25%;
-    }
+		li {
+			margin: 10px 0
+		}
 
-    th {
-      text-align: center;
-    }
+		#map {
+			width: 100%;
+			margin: 0px auto;
+		}
 
-    td {
-      text-align: center;
-    }
-  </style>
-  <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+		.max-width-img {
+			width: 100%;
+		}
 
+		/* Add custom style class here */
+	</style>
 </head>
 
 <body>
+	<section>
+		<!-- The division element contains an image element -->
+		<div id='map'>
+			<!-- The image element uses the the 'src' property to show an image on the page. -->
+			<img src="/Kentucky_dams_600dpi.png" class="max-width-img" alt="This map displays the dams, urban areas, and waterbodies of Kentucky">
+		</div>
+		 <a href="/Kentucky_dams_1200dpi.png">Link to high resolution version</a>
 
-  <header>
-    <h1>Map of Kentucky Dams in Relation to Urban Areas and Waterbodies</h1>
-  </header>
+		<!-- This is an HTML comment. Find the comments below and follow the instructions. -->
 
-  <section>
-    <div id='map'></div>
-    <img src="/Kentucky_dams_600dpi.png">
-    <p class="linkbox">link to higher resolution <a href="/Kentucky_dams_1200dpi.png"> image</a></p>
-  </section>
+		<h1>Kentucky Dams in Relation to Water Bodies and Urban Areas</h1>
+        <p>I decided to create my Kentucky Dams in Relation to Water Bodies and Urban Areas map because I have an interest for Kentucky's watersheds. 
+            Kentucky has the most navigable water
+            bodies second only to Alaska. There are many maps created to show and research Kentucky's watersheds so I decided to map dams
+            in relation to urban areas and water bodies/streams. From this map you can see where dams are in relation to larger cities and you can 
+            see what water bodies they are near or may be utilizing. 
+       </p>
 
-  <br><br>
-  <hr>
-  <h2>Source Information:</h2>
-  <p>This map was created by Morgan Murphy 
-  </p>
-  <h3>Overview</h3>
-  <p> I decided to create my Kentucky Dams in Relation to Water Bodies and Urban Areas map because I have an interest for Kentucky's watersheds. Kentucky has the most navigable water
-      bodies second only to Alaska. There are many maps created to show and research Kentucky's watersheds so I decided to map dams
-      in relation to urban areas and water bodies/streams. From this map you can see where dams are in relation to larger cities and you can 
-      see what water bodies they are near or may be utilizing. 
-  
-  </p>
-  <hr>
-  Link to readme <a href="/README.md">here</a>
-  Link to GitHub <a href="https://github.com/mrm2223">My Account</a>
-  <br/>
-  <script>
+		<!-- Add you information below -->
+		<h2>Authored by: Morgan Murphy</h2>
+		<p>This map was made using QGIS version 3.22 on 12/17/22 for newmapsplus at the University of Kentucky. CRS 3089. Here are links to the data
+			source:
+            <ul>
+                <li><a href="https://nationalmap.gov/small_scale/atlasftp.html" target="blank">The National Map
+                    Small-Scale website</a>. </li>
+                <li><a href="https://www.uky.edu/KGS/gis/hydro.htm">Kentucky Geological Survey</a></li>    
+            </ul>  </p>
+            <p>Link to <a href="/README.md">Readme</a></p>
 
-    // Map options control initial location and zoom level.
-    var options = {
-      center: [0, 0],
-      zoom: 2,
-      minZoom: 2,
-      maxZoom: 15,
-      zoomControl: true
-    }
-
-    // Create Leaflet map with above options.
-    var map = L.map('map', options);
-    // Get basemap URL from Leaflet Providers
-    var basemap_url = 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}';
-
-    // http://leaflet-extras.github.io/leaflet-providers/preview/index.html
-    // Get basemap attributes from Leaflet Providers for the specific map used
-    var basemap_attributes = {
-      maxZoom: 18,
-      attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
-    };
-    // requests some map tiles
-    var tiles = L.tileLayer(basemap_url, basemap_attributes);
-
-    map.addLayer(tiles);
-
-
-    var samplepoints = [
-      {
-        name: "Morgan Murphy",
-        properties: {
-          description: "Kentucky Dams in Relation to Water Bodies and Urban Areas",
-          coordinates: [38.048, -84.502],
-          topic: "Water"
-        }
-      }
-      //,
-
-    ];
-
-    // Create empty latLng bounds for zooming/centering map dynamically
-    var bounds = L.latLngBounds();
-
-    // Create all sample points
-    for (var i = 0; i < samplepoints.length; i++) {
-      var props = samplepoints[i].properties;
-      var popup = `<h3>${samplepoints[i].name}</h3>
-            <p><b>Topic</b>:<br>${props.topic}</p>
-            <p><b>Short description</b>:<br><i>${props.description}</i></p>`
-      //Create the icon 
-      var icon = L.icon({
-        iconUrl: props.icon,
-        iconSize: [40, 40],
-        popupAnchor: [0, -22],
-        className: "icon"
-      });
-
-      var marker = L.marker(samplepoints[i].properties.coordinates, {
-      })
-        .addTo(map)
-        .bindPopup(popup);
-
-      //  Extend the bounds as features are added
-      bounds.extend(samplepoints[i].properties.coordinates)
-
-
-      marker.on("mouseover", function () {
-        this.openPopup();
-      });
-      // marker.on("mouseout", function() {
-      //   this.closePopup();
-      // });
-    }
-
-// If you disable the mouseout, the popup will linger until mousing/clicking over another marker
-
-  </script>
+		<ul>
+			<!-- Change the following contacts to your personal brand, whatever you want it to be! -->
+			<li>See my projects on GitHub: <a href="https://github.com/mrm2223">Morgan Murphy</a></li>
+		</ul>
+		<hr>
+		<a href="https://uky-gis.github.io"><img width="20%"
+				src="https://uky-gis.github.io/graphics/logo-color-400px.png"
+				alt="University of Kentucky Geography"></a>
+		<a href="https://newmapsplus.as.uky.edu"><img width="15%"
+				src="https://newmapsplus.as.uky.edu/sites/default/files/NMP%20Logo.png" alt="New Maps Plus"></a>
+	</section>
 </body>
 
 </html>
