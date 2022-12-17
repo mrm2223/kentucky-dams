@@ -8,5 +8,5 @@
  In QGIS I added data from the National Atlas of the United States and filtered the state, waterbodies, stream, and urban areas layers for Kentucky specifically using queries and then exported them as GeoJSONs. For the stream layer I styled it by categorizing by Strahler order. I also added feature names for the urban areas and waterbodies. I then added the dam layer that was already filtered to Kentucky and changed the point size and color. I used the CRS 3089 which is Kentucky Single Zone. 
  ## Maps 
 Map images can be found here:
-* Kentucky_dams_600dpi [here](/Users/morganmurphy/Documents/GitHub/kentucky-watersheds/Kentucky_dams_600dpi.png)
-* Kentucky_dams_1200dpi [here](/Users/morganmurphy/Documents/GitHub/kentucky-watersheds/Kentucky_dams_1200dpi.png)
+* Kentucky_dams_600dpi [here](/Kentucky_dams_600dpi.png)
+* Kentucky_dams_1200dpi [here](/Kentucky_dams_1200dpi.png)
