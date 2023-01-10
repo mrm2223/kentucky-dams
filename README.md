@@ -1,12 +1,15 @@
 # Kentucky Dams 
 ## Overview
- This map shows Kentucky's streams, waterbodies, urban areas, and dams. By looking at this map you should be able to see dams in relation to urban areas as well as larger bodies of water. The urban areas are labeled and so are the waterbodies. I am very interested in Kentucky's watersheds and water organizations which led me to want to make a map about Kentucky Water. I have also recently learned about local dams in my areas which led me to create this map that combines Kentucky's water and streams with locations of dams. 
+ The 3 maps I have created depict Kentucky's water basins and dams, Kentucky's water basins and dam prevalence per county (using a red graduated color scheme) and the Big Sandy/Little Sandy and Tygarts Creek basins. By looking at these maps you should be able to see roughly which basins have the more dams than others, the range of which counties have a lot of dams or very few, and the amount of dams in the 2 specific basins listed above. The water basins are labeled for viewers to be able to learn about the different KY water basins and to see which one their county may be in. I chose to make these maps because I am very interested in Kentucky's waterways. Kentucky has the most navigable waterways in the US second only to Alaska. Water is a very important natural resource in Kentucky and I chose to highlight dams and water basins because I was curious the amount of dams in KY in relation to water basins. 
  ## Data
- Here is a link to the Kentucky Geological Society where I go my KY dam data: (https://www.uky.edu/KGS/gis/hydro.htm)
- The Ky state outline, counties, and urban areas were sourced from: (https://www2.census.gov/geo/tiger/TIGER2022/)
+ Regulated Dams data set: https://hub.arcgis.com/datasets/kygeonet::ky-water-resources-regulated-dams/about
+ KY River Basins data: https://opengisdata.ky.gov/datasets/kygeonet::ky-basin-team-areas/about
+ KY Counties data: https://data.lojic.org/datasets/kygeonet::ky-county-lines/about
+
  ## Procedure
- In QGIS I added data from the National Atlas of the United States and filtered the state, waterbodies, stream, and urban areas layers for Kentucky specifically using queries and then exported them as GeoJSONs. For the stream layer I styled it by categorizing by Strahler order. I also added feature names for the urban areas and waterbodies. I then added the dam layer that was already filtered to Kentucky and changed the point size and color. I used the CRS 3089 which is Kentucky Single Zone. 
+ In QGIS I made filtered the National Atlas of the United States to Kentucky and added my county data, dam data, and river basin data. I made a join layer for the KY counties and the dam data so that I could show the amount of dams per county using a graduated color scheme. I also labeled the river basins. I used the CRS 3089 which is Kentucky Single Zone. 
  ## Maps 
 Map images can be found here:
-* Kentucky_dams_600dpi [here](/Kentucky_dams_600dpi.png)
-* Kentucky_dams_1200dpi [here](/Kentucky_dams_1200dpi.png)
+* KY_Dams_and_Waterbodies.600dpi.png [here] (/insertlink)
+* KY_Dams_and_Waterbodies.1200dpi.png [here](/insertlink)
+^^^Need to fix this^^^
