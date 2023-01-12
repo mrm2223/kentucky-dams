@@ -5,11 +5,10 @@
  Regulated Dams data set: https://hub.arcgis.com/datasets/kygeonet::ky-water-resources-regulated-dams/about
  KY River Basins data: https://opengisdata.ky.gov/datasets/kygeonet::ky-basin-team-areas/about
  KY Counties data: https://data.lojic.org/datasets/kygeonet::ky-county-lines/about
+ KY State Outline data: https://www.igismap.com/download-kentucky-state-gis-maps-boundary-counties-rail-highway/
 
  ## Procedure
- In QGIS I made filtered the National Atlas of the United States to Kentucky and added my county data, dam data, and river basin data. I made a join layer for the KY counties and the dam data so that I could show the amount of dams per county using a graduated color scheme. I also labeled the river basins. I used the CRS 3089 which is Kentucky Single Zone. 
+ In QGIS I added the KY state outline layer, added the KY county layer, KY regulated dam data, and KY river basin layer. I made a join layer for the KY counties and the dam data so that I could show the amount of dams per county using a graduated color scheme. I also labeled the KY river basins. I used the CRS 3089 which is Kentucky Single Zone. 
  ## Maps 
 Map images can be found here:
-* KY_Dams_and_Waterbodies.600dpi.png [here] (/insertlink)
-* KY_Dams_and_Waterbodies.1200dpi.png [here](/insertlink)
-^^^Need to fix this^^^
+* KY State, Basins, and Dams (map 1) [600dpi]
