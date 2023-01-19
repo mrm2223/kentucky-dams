@@ -11,12 +11,12 @@
  In QGIS I added the KY state outline layer, added the KY county layer, KY regulated dam data, and KY river basin layer. I made a join layer for the KY counties and the dam data so that I could show the amount of dams per county using a graduated color scheme. I also labeled the KY river basins. I used the CRS 3089 which is Kentucky Single Zone. 
  ## Maps 
 Map images can be found here:
-* KY State Regulated Dams [600dpi](/Users/morganmurphy/Documents/GitHub/kentucky-dams/KY_dams_600dpi.jpg)
-* KY State Regulated Dams [1200dpi](../kentucky-dams/KY_dams_1200dpi.jpg)
-* Graduated Color Dams per County [600dpi](../kentucky-dams/KY_county_dams_600dpi.jpg)
-* Graduated Color Dams per County [1200dpi](../kentucky-dams/KY_county_dams_1200dpi.jpg)
-* Licking River Basin and Big Sandy/Little Sandy and Tygarts Creek Basin [600dpi](../kentucky-dams/KY_basins_dam_600dpi.jpg)
-* Licking River Basin and Big Sandy/Little Sandy and Tygarts Creek Basin [1200dpi](../kentucky-dams/KY_basins_dam_1200dpi.jpg)
+* KY State Regulated Dams [600dpi](KY_dams_600dpi.jpg)
+* KY State Regulated Dams [1200dpi](KY_dams_1200dpi.jpg)
+* Graduated Color Dams per County [600dpi](KY_county_dams_600dpi.jpg)
+* Graduated Color Dams per County [1200dpi](KY_county_dams_1200dpi.jpg)
+* Licking River Basin and Big Sandy/Little Sandy and Tygarts Creek Basin [600dpi](KY_basins_dam_600dpi.jpg)
+* Licking River Basin and Big Sandy/Little Sandy and Tygarts Creek Basin [1200dpi](KY_basins_dam_1200dpi.jpg)
 
 
 
