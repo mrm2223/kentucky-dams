@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<!-- This is a comment in HTML -->
+
+<head>
+	<meta charset=utf-8 />
+	<!-- Below is the title of the document -->
+	<title>Kentucky Dams</title>
+	<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+	<style>
+		/* This is a comment in CSS. Below are the document styles. */
+		/* Hexadecimal values for UKy Colors: 
+            #c7c9c8 light gray 
+            #63666a dark gray
+            #15397f dark blue
+            #009bda light blue
+            #0033a0 official blue
+        */
+		body {
+			margin: 0;
+			padding: 0;
+			background: #ffffff;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 400;
+			color: #3d3d3d;
+		}
+
+		section {
+			width: 960px;
+			/* width: 80%; */
+			margin: 20px auto;
+		}
+
+		h1 {
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 300;
+			/* The em unit. 2.5x the current size */
+			font-size: 2.5em;
+			letter-spacing: .04em;
+			text-transform: uppercase;
+		}
+
+		h2 {
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 700;
+			color: gray;
+			font-size: 1.1em;
+			letter-spacing: .04em;
+		}
+
+		p {
+			font-size: 1em;
+			line-height: 1.5em;
+		}
+
+		a {
+			color: #005daa;
+			text-decoration: none;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		ul {
+			padding-left: 20px;
+		}
+
+		li {
+			margin: 10px 0
+		}
+
+		#map {
+			width: 100%;
+			margin: 0px auto;
+		}
+
+		.max-width-img {
+			width: 100%;
+		}
+
+		/* Add custom style class here */
+	</style>
+</head>
+
+<body>
+	<section>
+		<h1>Kentucky Dams in Relation River Basins and Counties</h1>
+        <p>I created this set of maps because I was interested in seeing the relationship between regulated dams, river basins, and counties.
+			By creating these maps I was able to learn the location of regulated dams throughout the state, the amount of dams in the Kentucky
+		river basins, and the amount of dams in each county. </p>
+<br/>
+<br/>
+<br/>
+<br/>
+
+		<!-- The division element contains an image element -->
+		<div id='map'>
+			<!-- The image element uses the the 'src' property to show an image on the page. -->
+			<img src="/KY_dams_600dpi.jpg" class="max-width-img" alt="This map displays regulated dams of Kentucky">
+		</div>
+		 <a href="/KY_dams_1200dpi.jpg">Link to high resolution version</a>
+
+		<!-- This is an HTML comment. Find the comments below and follow the instructions. -->
+
+		
+        <p>This map shows regulated dams within Kentucky's river basins. The viewer should be able to see where higher concentrations
+			of dams are found in the different river basins. </p>
+<br/>
+<br/>
+<br/>
+<br/>
+			<div id='map'>
+				<!-- The image element uses the the 'src' property to show an image on the page. -->
+				<img src="/KY_county_dams_600dpi.jpg" class="max-width-img" alt="This map displays dams per county">
+			</div>
+			 <a href="/KY_county_dams_1200dpi.jpg">Link to high resolution version</a>
+		<p>
+			From this map you can see where dams are in relation to counties and see which river basins have a higher amount of dams
+			than other basins.
+       </p>
+<br/>
+<br/>
+<br/>
+<br/>
+	   <div id='map'>
+		<!-- The image element uses the the 'src' property to show an image on the page. -->
+		<img src="/KY_basins_dam_600dpi.jpg" class="max-width-img" alt="This map is zoomed in on 2 of Kentucky's river basins">
+	</div>
+	 <a href="/KY_basins_dam_1200dpi.jpg">Link to high resolution version</a>
+
+       <p> This map is zoomed in on the Licking River basin and the Big Sandy/Little Sandy and Tygarts Creek basin. I chose to display 
+		   these basins because I live in the Licking River basin and I work in the Big Sandy/Little Sandy and Tygarts Creek basin. I was
+		   interested to see the varying amounts of dams in each basin. I am very interested in watersheds and watersheds drain into major 
+		   river basins. Because of this, I was interested to see if there was a relationship between the number of dams in certain river 
+		   basins.
+
+       </p>
+<br/>
+<br/>
+		<!-- Add you information below -->
+		<h2>Authored by: Morgan Murphy</h2>
+		<p>This map was made using QGIS version 3.22 on 12/17/22 for newmapsplus at the University of Kentucky. CRS 3089. Here are links to the data
+			source:
+            <ul>
+                <li><a href="https://opengisdata.ky.gov/datasets/kygeonet::ky-basin-team-areas/about" target="blank">Open GIS Data- River Basins</a>. </li>
+                <li><a href=https://hub.arcgis.com/datasets/kygeonet::ky-water-resources-regulated-dams/about">KY Regulated Dams</a></li>  
+				<li><a href=https://data.lojic.org/datasets/kygeonet::ky-county-lines/about">KY Counties</a></li>
+            </ul>  </p>
+            <p>Link to <a href="/README.md">Readme</a></p>
+
+		<ul>
+			<!-- Change the following contacts to your personal brand, whatever you want it to be! -->
+			<li>See my projects on GitHub: <a href="https://github.com/mrm2223">Morgan Murphy</a></li>
+		</ul>
+		<hr>
+		<a href="https://uky-gis.github.io"><img width="20%"
+				src="https://uky-gis.github.io/graphics/logo-color-400px.png"
+				alt="University of Kentucky Geography"></a>
+		<a href="https://newmapsplus.as.uky.edu"><img width="15%"
+				src="https://newmapsplus.as.uky.edu/sites/default/files/NMP%20Logo.png" alt="New Maps Plus"></a>
+	</section>
+</body>
+
+</html>
